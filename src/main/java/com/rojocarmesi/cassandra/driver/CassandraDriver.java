@@ -3,6 +3,9 @@ package com.rojocarmesi.cassandra.driver;
 import com.datastax.driver.core.*;
 import com.rojocarmesi.cassandra.exceptions.CassandraException;
 
+import java.util.Collection;
+import java.util.List;
+
 public class CassandraDriver {
 
     private Cluster cluster;
@@ -40,6 +43,14 @@ public class CassandraDriver {
 
     public ResultSet execute(String query){
         return session.execute(query);
+    }
+
+    public List<KeyspaceMetadata> getKeyspaces(){
+        return cluster.getMetadata().getKeyspaces();
+    }
+
+    public Collection<TableMetadata> getTablenames(String keyspace) {
+        return cluster.getMetadata().getKeyspace(keyspace).getTables();
     }
 
     public void close() {
