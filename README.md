@@ -1,4 +1,4 @@
-cassandra-data-filler
+Cassandra-data-filler
 =====================
 
-Intelligent Data Filler for Apacha Cassandra
+Intelligent Data Filler for Apache Cassandra
