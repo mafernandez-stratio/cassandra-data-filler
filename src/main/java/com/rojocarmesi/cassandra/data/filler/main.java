@@ -16,14 +16,18 @@ public class main {
         //DONE: allow patterns
         //DONE: number ranges
         //DONE: allow sets
+        //TODO: bug
+        //TODO: requiring data according to type
+        //TODO: random with jfairy
+        //TODO: secuencial type when numeric
         //TODO: refactor
         //TODO: tests
-        //TODO: requiring data according to type
         //DONE: show keyspaces and tablenames
 
-        Scanner scan= new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         CassandraDriver cDriver = new CassandraDriver();
+        cDriver.connect("127.0.0.1");
 
         boolean repeat;
 
@@ -63,8 +67,6 @@ public class main {
                 System.err.println("3rd argument must be a positive number");
                 System.exit(-1);
             }
-
-            cDriver.connect("127.0.0.1");
 
             TableMetadata tableMetadata = cDriver.getTableMetadata(keyspace, tablename);
 
