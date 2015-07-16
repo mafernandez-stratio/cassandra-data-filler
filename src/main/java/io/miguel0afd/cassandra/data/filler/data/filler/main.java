@@ -1,7 +1,7 @@
-package com.rojocarmesi.cassandra.data.filler;
+package io.miguel0afd.cassandra.data.filler.data.filler;
 
 import com.datastax.driver.core.*;
-import com.rojocarmesi.cassandra.driver.CassandraDriver;
+import io.miguel0afd.cassandra.data.filler.driver.CassandraDriver;
 import org.apache.commons.lang.RandomStringUtils;
 
 import java.util.*;

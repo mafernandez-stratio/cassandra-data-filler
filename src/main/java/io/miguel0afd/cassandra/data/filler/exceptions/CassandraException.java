@@ -1,4 +1,4 @@
-package com.rojocarmesi.cassandra.exceptions;
+package io.miguel0afd.cassandra.data.filler.exceptions;
 
 public class CassandraException extends RuntimeException{
 

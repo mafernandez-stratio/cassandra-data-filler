@@ -1,7 +1,7 @@
-package com.rojocarmesi.cassandra.driver;
+package io.miguel0afd.cassandra.data.filler.driver;
 
 import com.datastax.driver.core.*;
-import com.rojocarmesi.cassandra.exceptions.CassandraException;
+import io.miguel0afd.cassandra.data.filler.exceptions.CassandraException;
 
 import java.util.Collection;
 import java.util.List;
